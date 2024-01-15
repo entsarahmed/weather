@@ -1,0 +1,106 @@
+
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+.container, .row{
+ --bs-gutter-x: 0;
+}
+nav .navbar-nav .nav-item a{
+  color: #fff;
+transition: color .3s;
+position: relative;
+}
+nav .navbar-nav .nav-item a:hover{
+  color: #09c;
+}
+
+nav .navbar-nav .nav-item a.active{
+  color: #09c;
+}
+nav .navbar-nav .nav-item a:hover::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  border-radius: 50%;
+  background-color: rgb(68, 128, 146);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+nav .navbar-nav .nav-item a.active::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  border-radius: 50%;
+  background-color: rgb(68, 128, 146);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.header img{
+  height: 400px;
+}
+
+.header .search{
+  position: absolute;
+   top: 40%; 
+  left: 10%;
+
+}
+.header .search .btn-primary{
+  position: absolute;
+  right: 10px;
+top: 10px;
+}
+.row .ico{
+width: 200px;
+}
+.row{
+  bottom: 80px;
+  left: 0;
+}
+.temp{
+  font-size: 80px;
+  font-weight: bold;
+}
+.weather{
+  background-color: #323544;
+}
+.logo{
+  width: 20px;
+}
+ footer{
+  padding: 80px;
+  background-color: #262936;
+ }
+ footer input{
+  width: 100%;
+ }
+ footer .searc .btn-primary{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+ }
+
+ footer .icon a{
+  border-radius: 50%;
+  background-color: #222530;
+  transition: background-color .3s;
+ }
+
+footer .icon a:hover{
+  background-color: #09c;
+}
+footer .icon a i{
+  transition: .3s;
+}
+footer .icon a:hover i{
+  color: white;
+}
+ 

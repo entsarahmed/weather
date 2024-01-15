@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <!-- link fontawesome -->
+  <link rel="stylesheet" href="./css/all.css"/>
+  <link rel="stylesheet" href="./css/all.min.css"/>
+  <!-- end fontawesome -->
+
+  <!-- link bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <!-- end bootstrap -->
+
+<!-- link css -->
+<link rel="stylesheet" href="./css/style.css"/>
+<!-- end -->
+</head>
+<body>
+ <!-- navbar -->
+ 
+ <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-4">
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center">
+
+      <div>
+        <a href="index.html">
+        <img src="./images/logo@2x.png" alt="logo" class="w-50 ms-md-5">
+      </a>
+      </div>
+      
+    <div class="d-flex flex-column">
+    <a class="navbar-brand" href="index.html">weather</a>
+    <a href="index.html" class="text-decoration-none text-secondary">tagline goes here</a>
+  </div>
+</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-md-5">
+        <li class="nav-item me-4">
+          <a class="nav-link active fs-4" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link fs-4" aria-current="page" href="#">News</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link fs-4" aria-current="page" href="#">Live cameras</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link fs-4" aria-current="page" href="#">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4" aria-current="page" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- start home -->
+<section class="bg-dark">
+<div class="header position-relative">
+  <img src="./images/banner.png" alt="" class="w-100">
+  <div class="search w-75 mx-auto">
+    <input  id="cityInput" type="search" class="w-100 p-3 border-0 bg-dark rounded-5 text-white" placeholder="Find your location...." >
+<button id="find" class="btn btn-primary rounded-5 px-4">Find</button>
+</div>
+</div>
+</section>
+<div class="bg-dark">
+<section class="container contain">
+
+<div id="cols" class="row rounded-3 position-relative g-3">
+
+
+ <div class="col-md-4 pb-5 weather">
+  <div class="py-2 d-flex justify-content-between bg-dark px-3">
+    <span id="day1" class="fs-5 text-secondary">Saturday</span>
+    <span class="fs-5 text-secondary" id="month">13January</span>
+  </div>
+  <span id="cityName" class="fs-3 p-3 my-2 d-inline-block text-secondary">Cairo</span>
+  <div class="d-flex justify-content-around align-items-center">
+    <span id="day1Max" class="temp text-white"><span id="temp1" >17</span>&degc</span>
+    <img id="img1" class="ico iconCurrent" src="images/113.png" alt="">
+  </div>
+  <span class="fs-4 text-primary px-2 pb-3 d-inline-block" id="conditionWeather">Sunny</span>
+<div>
+  <span class="text-secondary ps-3"><img class="me-2 logo" src="images/icon-umberella@2x.png" alt="">20%</span>
+  <span class="text-secondary px-5"><img class="me-2 logo" src="images/icon-wind@2x.png" alt="">18km/h</span>
+  <span class="text-secondary "><img class="me-2 logo" src="images/icon-compass@2x.png" alt="">East</span>
+</div>
+</div>
+
+
+<div class="col-md-4 bg-secondary pb-5 weather">
+  <div class="py-2 bg-dark  px-3 text-center">
+    <span id="day2" class="fs-5 text-secondary">Saturday</span>
+  </div>
+  <div class="d-flex flex-column justify-content-around align-items-center">
+    <img id="img2" class="ico w-25 icon1" src="images/113.png" alt="">
+    <span id="day2Max" class="fs-1"><span id="maxtemp1">17</span>&degc</span>
+    <span id="day2Min" class="fs-4"><span id="mintemp1">12.7</span>&deg</span>
+  </div>
+<div class="text-center pt-5"><span class="fs-4 text-primary px-2 pb-3 d-inline-block" id="conditionWeather1">Sunny</span></div>
+  
+</div>
+
+<div class="col-md-4 pb-5 weather">
+  <div class="py-2  text-center bg-dark px-3">
+    <span id="day3" class="fs-5 text-secondary">Saturday</span>
+  </div>
+  <div class="d-flex flex-column justify-content-around align-items-center">
+    <img id="img3" class="ico w-25 icon2" src="images/113.png" alt="">
+    <span id="day3Max" class="fs-1 text-white"><span id="maxtemp2">17</span>&degc</span>
+    <span id="day3Min" class="text-secondary fs-4"><span id="mintemp2">12.7</span>&deg</span>
+  </div>
+ <div class="text-center pt-5"> <span class="fs-4 text-primary px-2 pb-3 d-inline-block" id="conditionWeather2">Sunny</span></div>
+</div> 
+
+
+<div class="col-md-4 pb-5 weather">
+  <div class="py-2  text-center bg-dark px-3">
+    <span id="day4" class="fs-5 text-secondary">Saturday</span>
+  </div>
+  <div class="d-flex flex-column justify-content-around align-items-center">
+    <img id="img4" class="ico w-25 icon3" src="images/113.png" alt="">
+    <span id="day4Max" class="fs-1 text-white"><span id="maxtemp3">17</span>&degc</span>
+    <span id="day4Min" class="text-secondary fs-4"><span id="mintemp3">12.7</span>&deg</span>
+  </div>
+ <div class="text-center pt-5"> <span class="fs-4 text-primary px-2 pb-3 d-inline-block" id="conditionWeather3">Sunny</span></div>
+</div> 
+ 
+ 
+<div class="col-md-4 bg-secondary pb-5 weather">
+  <div class="py-2 bg-dark  px-3 text-center">
+    <span id="day5" class="fs-5 text-secondary">Saturday</span>
+  </div>
+  <div class="d-flex flex-column justify-content-around align-items-center">
+    <img id="img5" class="ico w-25 icon4" src="images/113.png" alt="">
+    <span id="day5Max" class="fs-1"><span id="maxtemp4">17</span>&degc</span>
+    <span id="day5Min" class="fs-4"><span id="mintemp4">12.7</span>&deg</span>
+  </div>
+<div class="text-center pt-5"><span class="fs-4 text-primary px-2 pb-3 d-inline-block" id="conditionWeather4">Sunny</span></div>
+  
+</div>
+
+<div class="col-md-4 pb-5 weather">
+  <div class="py-2  text-center bg-dark px-3">
+    <span id="day6" class="fs-5 text-secondary">Saturday</span>
+  </div>
+  <div class="d-flex flex-column justify-content-around align-items-center">
+    <img id="img6" class="ico w-25 icon5" src="images/113.png" alt="">
+    <span id="day6Max" class="fs-1 text-white"><span id="maxtemp5">17</span>&degc</span>
+    <span id="day6Min" class="text-secondary fs-4"><span id="mintemp5">12.7</span>&deg</span>
+  </div>
+ <div class="text-center pt-5"> <span class="fs-4 text-primary px-2 pb-3 d-inline-block" id="conditionWeather5">Sunny</span></div>
+</div> 
+ 
+
+
+
+
+
+
+</div>
+
+
+</section>
+</div>
+
+<footer >
+  <div class="row px-2">
+    <div class="searc position-relative col-md-7 me-5 ">
+    <input type="email" class="p-3 border-0 bg-dark rounded-5 text-white" placeholder="Enter your email to subscribe........" >
+<button class="btn btn-primary rounded-5 px-4">subscribe</button>
+</div>
+<div class="icon col-md-4 my-5">
+  <a href="" class="p-3"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="" class="p-3"><i class="fa-brands fa-twitter"></i></a>
+  <a href="" class="p-3"><i class="fa-brands fa-google"></i></a>
+  <a href="" class="p-3"><i class="fa-brands fa-pinterest"></i></a>
+</div>
+</div>
+<p class="text-secondary ps-md-5 pt-3 ms-md-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+</footer>
+
+ 
+
+<!-- end home -->
+  <!-- link bootstrap-->
+   <script src="./js/bootstrap.bundle.min.js"></script>
+<!-- link js -->
+   <script src="js/index.js"></script>
+</body>
+</html>
